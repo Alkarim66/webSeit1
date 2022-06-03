@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hassona Academy</title>
+          <!--ندخل عللى الملف البوت ستراب ومن ثم من ملف السي اس اس نختار البوت ستراب دوت من دوت سي اس اس ملف السي اس اس نخليه فوك-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css">
+
+    <!--ملاحظة عندما سمينا الملف اندكس فان هذا الملف راح يشتغل اول شي عندما راح نشغله -->
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+
+<body>
+ 
+   <!--راح نستخدم الناف بار وتم تثبيت الناف بار عن طريق اضافة الستكي داش توب داخل الكلاس-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> <!--بدلنا لون الناف بار من لايت الى دارك يعني من ابيض الى اسود الناف بار وال بي جي-->
+    <a class="navbar-brand" href="#" style="border-right: 1px solid #aaa; padding: 10px;">
+      <img src="images\images.png" alt="" style="height:35px; width:35px; margin-left:5px;">
+      Hassona Academy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses  <!--تم تغير الكلمة الى كلمة كورسات-->
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">C sharp</a>   <!--هنا تم وضع الروابط الخاصة بالكورسات من اليوتيوب في ال الاج رف-->
+            <a class="dropdown-item" href="#">javaScript</a>
+            <a class="dropdown-item" href="#">C++</a>
+            <a class="dropdown-item" href="#">Html</a>
+            <a class="dropdown-item" href="#">Jquery</a>
+            <a class="dropdown-item" href="#">BootStarp</a>
+
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Css</a>
+            <a class="dropdown-item" href="#">TypeScript</a>
+            <a class="dropdown-item" href="#">Dart</a>
+            <a class="dropdown-item" href="#">Mysql</a>
+            <a class="dropdown-item" href="#">Php</a>
+
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a> <!--هنانا حذفنا الالاي مال الدسيبل ووضعنا ابداله اباوت--> 
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" style="margin-right: 10px;"> <!--وضعنا ستايل مارجن حتى نسوي مسافة بين الازرار اللوكن والسيرج-->
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button> <!--بدلنا البي تي ان سكسس الى انفو مال السيرج-->
+      </form>
+
+      <!--تم نسخ الفورم التي بالاعلى الخاصة بالسيرج وتم التعديل عليها وذلك بحذف الانبوت مالتها فقط -->
+      <form class="form-inline my-2 my-lg-0">  <!--تم وضع الداتا توكل والداتا تاركت الي جبناها من زر المودل الي باسف الصفحة هنانا وتم تغير التايب من سب مت الى بتن-->
+        <button class="btn btn-outline-info my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+          Login</button> <!--بدلنا البي تي ان سكسس الى انفو مال اللوكن -->        
+      </form>      <!--طبعا الفكرة من اضافة الداتا توكل والداتا تاركت الي جلبناها من الزر مال المودل من اسف الصفحة هي اظهار شاشة لادخال رمز الدخول عند الضغط على زر لوكن -->
+    </div>
+  </nav>
+
+  <!--هنانا خلينا محتوى الموقع كله داخل دف تحتوي كلاس من نوع كونتينر ونوع الكونتينر هو فلويد -->
+   <div class="container-fluid"> <!--p-0 في حال وضعناها داخل الكلاس في الكونتينر فلويد الرئيسية فانه راح يصبح الموقع كله ماخذ الشاشة كاملة من الجانب الايمن والجانب الايسر -->
+<!-- carousel  عبارة عن مستعرض صور كسلايدات-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+  </ol>     <!--راح نشتغل على الكورسر انر وذلك بعمل ملف سي اس اس خارجي ونستدعيه هنانا وراح يشتغل عليه-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images\foto2.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+       <div class="carousel-caption">  <!--هاي الدف سويناها وراح نضيفها جوه كل ايمج-->
+         <h1>Html</h1>
+         <a href="https://www.youtube.com/watch?v=6mxro9uZbJw&list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf"class="btn btn-primary" target="-blanck">view this course</a>
+       </div>   <!--ضثفنا رابط اللسته مال الكورس حيث قمنا بجلبه من اليوتيوب-->
+    </div>
+    <div class="carousel-item">
+      <img src="images\foto3.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+      <div class="carousel-caption">
+        <h1>Css</h1>
+        <a href="https://www.youtube.com/watch?v=6mxro9uZbJw&list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf" class="btn btn-primary" target="-blanck">view this course</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\foto4.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+      <div class="carousel-caption">
+        <h1>JavaScript</h1>
+        <a href="https://www.youtube.com/watch?v=6mxro9uZbJw&list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf"class="btn btn-primary" target="-blanck">view this course</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images\foto10.jpg" class="d-block w-100" alt="..." style="height: 650px;">
+      <div class="carousel-caption">
+        <h1>JQuery</h1>
+        <a href="https://www.youtube.com/watch?v=6mxro9uZbJw&list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf"class="btn btn-primary" target="-blanck">view this course </a>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<!--///////////// jumbotron ///////////////// تم جلب الكود من الكومبوننت من الموقع الرسمي للبوت ستراب -->
+                            <hr class="my-4">
+<div class="jumbotron text-light bg-dark" style="border-top-left-radius: 0px; border-top-right-radius: 0px;"> <!--الفائدة من الجم بترون هي للفت الانتباه وتم اضافة التكست لايت والبي جي اعطيناه دارك-->
+  <h1 class="display-4"> wellcome </h1>      <!--انطينا البوردر ليفت والبوردر رايت رديس صفر حتى يبقى بس من جوه بيه رديس للجمالية لااكثر -->
+  <p class="lead">programming without languge , and with out code </p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=TLmgaBEkbSU&list=PLHIfW1KZRIflppXbTqLj4qwu1BH6F31zo" role="button" target="-blank">Learn more</a>
+</div>                                         
+
+<!-- collapse programming - lang ////// تم جلب الكود من الكومبوننت من البادج-->
+                            <hr class="my-4">
+<h1 class="text-center text-light">Programming language <span class="badge badge-secondary">New</span></h1> <!--كتبنا كلاس بوت ستراب داخل الاج وان وكلناله التكست داش سنتر -->
+                        
+<!--/////////////////////// Accordion example (collaps) //////////////////////-->
+<div class="accordion" id="accordionExample"> <!--طبعا تم اضافته للكود عن طريق الدخول على الكومبوننت ومن ثم اختيار الكولابس-->
+  <div class="card text-light bg-dark"> <!--هنانا كتبنا داخل كلاس الكارد انه التكست خليناه لايت والبي جي خليناه دارك-->
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">       <!--غيرنا نوع الزر الى بتي ان اوت لاين لايت-->
+        <button class="btn btn-outline-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Python programming language  <!--تم التعديل بكتابة النص التالي -->
+        </button>
+      </h2>
+    </div>
+             <!--كانت كولابس شو قمنا بمسح كلمة شو عرض حتى ميظهر المحتوى باي ديفولت وانما يكون مغلق وعند الضغط على الزرار يظهر المحتوى-->
+    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        python is a powerfull programming language thats used deeply with machine learning <!--تم كتابة النص التالي عن للغة البايثون -->
+      </div>
+    </div>
+  </div>
+  <div class="card text-light bg-dark"> <!--هنانا كتبنا داخل كلاس الكارد انه التكست خليناه لايت والبي جي خليناه دارك-->
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-outline-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Ring programming language 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Ring is a powerfull programming language thats used deeply for many purposes 
+      </div>
+    </div>
+  </div>
+  <div class="card text-light bg-dark"> <!--هنانا كتبنا داخل كلاس الكارد انه التكست خليناه لايت والبي جي خليناه دارك-->
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-outline-light collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Java programming language 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Java is a powerfull programming language thats used deeply for many purposes 
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--الان راح نعمل طريقة نجعل الممستخدم انه يجرب اللغة البرمجة اون لاين يعني بالموقع ياخذ الكود ويجربه بالشيل -->
+                 <!--try python-->
+               <hr class="my-4">
+<h1 class="text-center text-light">Python is very easy</h1>   <!--التكست لايت هاي احنا وضعناه حتى لون النص يصير ابيض -->
+<div class="card bg-dark">
+  <div class="card-body">
+    <h4 class="text-light">. try code bellow from
+       <a href="https://www.python.org/shell/" target="_blank">here</a>
+    </h4>   <!--الكلاس هنانا يمثل ابوت ستراب والاون كلك يمثل الجافا سكربت-->
+    <div class="btn btn-sm btn-outline-light" onclick="mycopy('mypython')"> <!--سوينا زر باستخدام كلاس البوت ستراب -->
+      copy
+    </div>
+    <pre>           <!--هنانا انطيناه لون بالستايل شيت للكود-->
+       <code class="text-light-info" id="mypython"> <!--انطينا ايدي للكود حتى نستفاد منه في زر النسخ الي سويناه بالبوت ستراب باستخدام الدف بالاعلى-->
+          name=input('Enter your name: '); print('Hello ' + name)
+           
+       </code>
+    </pre>
+  </div>
+</div>
+
+<!--///////////////////////////////////////////////////////////////////////////-->
+                 <!--try Ring-->
+               <hr class="my-4">
+<h1 class="text-center text-light">Ring is very easy</h1>
+<div class="card bg-dark">
+  <div class="card-body">
+    <h4 class="text-light">. try code bellow from
+       <a href="https://tio.run/#ring" target="_blank">here</a>
+    </h4>
+    <div class="btn btn-sm btn-outline-light" onclick="mycopy('myring')"> <!--راح تاخذ الايدي من جوه -->
+      copy
+    </div>
+    <pre>          <!--هنانا انطيناه لون بالستايل شيت للكود-->
+       <code class="text-light-info" id="myring"> <!--هنانا راح ناخذ الايدي ونرسله الى دالة الماي كوبي -->
+          see 'i love Ring' + nl
+          for x in 'A':'Z' see x + ', ' next
+           
+       </code>
+    </pre>
+  </div>
+</div>
+
+<br>
+  
+<!--////////////////////////// الان راح نعمل كارد والي راح نجيبه من موقع البوت ستراب من الكومبوننت  ///////////////////////////////-->
+
+         <div class="fixedimg fixedbackimg1"> </div>
+
+            <!--Basic Rock-->
+                               <hr class="my-4">
+<h1 class="text-center text-light">Basic Rock</h1> <!--هذه مجرد عنوان خلينا بالنص -->
+<div class="container-fluid">
+
+  <!--طبعا هذا الدف يمثل السكشن الرئيسي الذي يحوي على كل البيسك روك صخرة الاساس-->
+                     <!--طبعا نكدر نضع بالكونتنت اراوند او نضع سنتر حسب منريد-->
+  <div class="row justify-content-around" style="background-color: #343a4099; border-radius:7px; padding:20px;"> <!--هنانا انطينا للدف التي تحتوي على كل ما يحتويه صخرة الاساس انطيناه جستفاي كونتنت سنتر حتى تظهر في الوسط-->
+
+    <!--Basic Rock for HTML-->    <!--هنانا وضعنا الكرد ومثل معرفنا القيمة الحقيقة هي قسمة رقم 12 على قيمة كل رقم-->
+    <div class="card bg-dark col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin:7px ;"> <!--طبعا هاي الام كيو ديفولت تمثل جودة الصورة وتعني مديم وعدنا هم الاس كيو ديفولت تعني ستاندرد وعدنا الاج كيو ديفولت وتعني هاي-->
+      <a href="https://youtu.be/KRiq7Eqfe-Q" target="_blank"> <!--احنا نريد الصورة لمن نضغط عليها يودينا الى اليوتيوب ويفتح الفديو فلذلك سوينا تاك للرابط وخلينا داخل البلوك مالته الامج-->
+      <img src="https://i.ytimg.com/vi/KRiq7Eqfe-Q/mqdefault.jpg" class="card-img-top" alt="..."> <!--هنانا راح نضع رابط درس صخرة الاساس والكتاب مالته الصورة هنانا نريدها من اليوتيوب نفسه فراح ناخذ جزء من الرابط بعد مراح ندخل على اليوتيوب ونظهر الفديو مال صخرة الاساس للاج ت ام ال ونضع نقطة ثم جي بي ج-->
+      </a>  <!--حتى نجيب الصورة لليوتيوب نفسه راح نكتب الكليشة مال الج ت ت بي اس لحد ال في اي ومن ثم نضع الجزء الاخير من رابط الفديو وبهذه الطريقة راح تظهر صورة الفديو فقط-->
+      <div class="card-body text-light">                        <!--طريقة جلب الرابط نقوم بالضغط على شير ومن ثم نضغط كوبي -->
+        <h5 class="card-title">Basic Rock for HTML</h5>
+        <p class="card-text">Basic Rock in HTML from zero to hero</p>
+        <a href="http://www.mediafire.com/file/ycg0ecxacj0ohpd/basic-rock-html.pdf/file" class="btn btn-primary" target="_blank">Download the Book</a>
+      </div>
+    </div>
+    <!--Basic Rock for Html-->
+
+
+     <!--Basic Rock for Css-->    <!--هنانا وضعنا الكرد ومثل معرفنا القيمة الحقيقة هي قسمة رقم 12 على قيمة كل رقم-->
+     <div class="card bg-dark col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin:7px ;"> <!--طبعا هاي الام كيو ديفولت تمثل جودة الصورة وتعني مديم وعدنا هم الاس كيو ديفولت تعني ستاندرد وعدنا الاج كيو ديفولت وتعني هاي-->
+      <a href="https://youtu.be/CE4fEEY_Dao" target="_blank"> <!--احنا نريد الصورة لمن نضغط عليها يودينا الى اليوتيوب ويفتح الفديو فلذلك سوينا تاك للرابط وخلينا داخل البلوك مالته الامج-->
+      <img src="https://i.ytimg.com/vi/CE4fEEY_Dao/mqdefault.jpg" class="card-img-top" alt="..."> <!--هنانا راح نضع رابط درس صخرة الاساس والكتاب مالته الصورة هنانا نريدها من اليوتيوب نفسه فراح ناخذ جزء من الرابط بعد مراح ندخل على اليوتيوب ونظهر الفديو مال صخرة الاساس للاج ت ام ال ونضع نقطة ثم جي بي ج-->
+      </a>  <!--حتى نجيب الصورة لليوتيوب نفسه راح نكتب الكليشة مال الج ت ت بي اس لحد ال في اي ومن ثم نضع الجزء الاخير من رابط الفديو وبهذه الطريقة راح تظهر صورة الفديو فقط-->
+      <div class="card-body text-light">                        <!--طريقة جلب الرابط نقوم بالضغط على شير ومن ثم نضغط كوبي -->
+        <h5 class="card-title">Basic Rock for Css</h5>
+        <p class="card-text">Basic Rock in Css from zero to hero</p>
+        <a href="http://www.mediafire.com/file/ernkowmqmpthgiv/basic-rock-css.pdf/file" class="btn btn-primary" target="_blank">Download the Book</a>
+      </div>
+    </div>
+    <!--Basic Rock for Css-->
+
+
+    <!--Basic Rock for Svg-->    <!--هنانا وضعنا الكرد ومثل معرفنا القيمة الحقيقة هي قسمة رقم 12 على قيمة كل رقم-->
+    <div class="card bg-dark col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin:7px ;"> <!--طبعا هاي الام كيو ديفولت تمثل جودة الصورة وتعني مديم وعدنا هم الاس كيو ديفولت تعني ستاندرد وعدنا الاج كيو ديفولت وتعني هاي-->
+      <a href="https://youtu.be/1mo782_S1ys" target="_blank"> <!--احنا نريد الصورة لمن نضغط عليها يودينا الى اليوتيوب ويفتح الفديو فلذلك سوينا تاك للرابط وخلينا داخل البلوك مالته الامج-->
+      <img src="https://i.ytimg.com/vi/1mo782_S1ys/mqdefault.jpg" class="card-img-top" alt="..."> <!--هنانا راح نضع رابط درس صخرة الاساس والكتاب مالته الصورة هنانا نريدها من اليوتيوب نفسه فراح ناخذ جزء من الرابط بعد مراح ندخل على اليوتيوب ونظهر الفديو مال صخرة الاساس للاج ت ام ال ونضع نقطة ثم جي بي ج-->
+      </a>  <!--حتى نجيب الصورة لليوتيوب نفسه راح نكتب الكليشة مال الج ت ت بي اس لحد ال في اي ومن ثم نضع الجزء الاخير من رابط الفديو وبهذه الطريقة راح تظهر صورة الفديو فقط-->
+      <div class="card-body text-light">                        <!--طريقة جلب الرابط نقوم بالضغط على شير ومن ثم نضغط كوبي -->
+        <h5 class="card-title">Basic Rock for Svg</h5>
+        <p class="card-text">Basic Rock in Svg from zero to hero</p>
+        <a href="http://www.mediafire.com/file/9y3en2loaxpal0p/basic-rock-svg.pdf/file" class="btn btn-primary" target="_blank">Download the Book</a>
+      </div>
+    </div>
+    <!--Basic Rock for Svg-->
+
+
+
+    <!--Basic Rock for Python-->    <!--هنانا وضعنا الكرد ومثل معرفنا القيمة الحقيقة هي قسمة رقم 12 على قيمة كل رقم-->
+    <div class="card bg-dark col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin:7px ;"> <!--طبعا هاي الام كيو ديفولت تمثل جودة الصورة وتعني مديم وعدنا هم الاس كيو ديفولت تعني ستاندرد وعدنا الاج كيو ديفولت وتعني هاي-->
+      <a href="https://youtu.be/TOOGkMTZHgM" target="_blank"> <!--احنا نريد الصورة لمن نضغط عليها يودينا الى اليوتيوب ويفتح الفديو فلذلك سوينا تاك للرابط وخلينا داخل البلوك مالته الامج-->
+      <img src="https://i.ytimg.com/vi/TOOGkMTZHgM/mqdefault.jpg" class="card-img-top" alt="..."> <!--هنانا راح نضع رابط درس صخرة الاساس والكتاب مالته الصورة هنانا نريدها من اليوتيوب نفسه فراح ناخذ جزء من الرابط بعد مراح ندخل على اليوتيوب ونظهر الفديو مال صخرة الاساس للاج ت ام ال ونضع نقطة ثم جي بي ج-->
+      </a>  <!--حتى نجيب الصورة لليوتيوب نفسه راح نكتب الكليشة مال الج ت ت بي اس لحد ال في اي ومن ثم نضع الجزء الاخير من رابط الفديو وبهذه الطريقة راح تظهر صورة الفديو فقط-->
+      <div class="card-body text-light">                        <!--طريقة جلب الرابط نقوم بالضغط على شير ومن ثم نضغط كوبي -->
+        <h5 class="card-title">Basic Rock for Python</h5>
+        <p class="card-text">Basic Rock in Python from zero to hero</p>
+        <a href="http://www.mediafire.com/file/cpzkhp5xnbzv42v/basic-rock-python-short.pdf/file" class="btn btn-primary" target="_blank">Download the Book</a>
+      </div>
+    </div>
+    <!--Basic Rock for Python-->
+
+
+
+    <!--Basic Rock for Ring-->    <!--هنانا وضعنا الكرد ومثل معرفنا القيمة الحقيقة هي قسمة رقم 12 على قيمة كل رقم-->
+    <div class="card bg-dark col-lg-3 col-md-4 col-sm-6 col-xs-12" style="width: 18rem; margin:7px ;"> <!--طبعا هاي الام كيو ديفولت تمثل جودة الصورة وتعني مديم وعدنا هم الاس كيو ديفولت تعني ستاندرد وعدنا الاج كيو ديفولت وتعني هاي-->
+      <a href="https://youtu.be/rOwOEFTVvg0" target="_blank"> <!--احنا نريد الصورة لمن نضغط عليها يودينا الى اليوتيوب ويفتح الفديو فلذلك سوينا تاك للرابط وخلينا داخل البلوك مالته الامج-->
+      <img src="https://i.ytimg.com/vi/rOwOEFTVvg0/mqdefault.jpg" class="card-img-top" alt="..."> <!--هنانا راح نضع رابط درس صخرة الاساس والكتاب مالته الصورة هنانا نريدها من اليوتيوب نفسه فراح ناخذ جزء من الرابط بعد مراح ندخل على اليوتيوب ونظهر الفديو مال صخرة الاساس للاج ت ام ال ونضع نقطة ثم جي بي ج-->
+      </a>  <!--حتى نجيب الصورة لليوتيوب نفسه راح نكتب الكليشة مال الج ت ت بي اس لحد ال في اي ومن ثم نضع الجزء الاخير من رابط الفديو وبهذه الطريقة راح تظهر صورة الفديو فقط-->
+      <div class="card-body text-light">                        <!--طريقة جلب الرابط نقوم بالضغط على شير ومن ثم نضغط كوبي -->
+        <h5 class="card-title">Basic Rock for Ring</h5>
+        <p class="card-text">Basic Rock in Ring from zero to hero</p>
+        <a href="http://www.mediafire.com/file/9cxczfchl01skxi/basic-rock-ring-short.pdf/file" class="btn btn-primary" target="_blank">Download the Book</a>
+      </div>
+    </div>
+    <!--Basic Rock for Ring-->
+
+  </div>
+
+   </div>   <!--هذه نهاية دف الكونتينر الي نوعها فلويد مال صخرة الاساس -->
+
+         <!--ملاحظة في حال طلعنا الكونتينر فلويد مال صخرة الاساس خارج الكونتينر فلويد مال الرئيسية فانه راح متشتغل الكونتينر فلويد مال صخرة الاساس فلازم ننتبه-->
+
+          <!--Basic Rock-->      
+          
+          <div class="fixedimg fixedbackimg2"> </div>
+
+                               <hr class="my-4">
+     <h1 class="text-center text-light">thanks for</h1>
+  <!--Thanks-->
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+                <!-- صورة رقم 1-->
+        <!--جنالنا كارد من الكومبوننت واختارينا الكارد الي هو صورة يكون وكلمة جواها فقط-->
+        <div class="card" style="width: 18rem; margin: 10px;">
+          <img src="images\foto14.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dr.Hamed</p>
+          </div>
+        </div>
+
+                                <!--صورة رقم 2-->
+
+         <!--جنالنا كارد من الكومبوننت واختارينا الكارد الي هو صورة يكون وكلمة جواها فقط-->
+         <div class="card" style="width: 18rem; margin: 10px;">
+          <img src="images\foto15.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dr.Ahmed </p>
+          </div>
+        </div>
+
+
+                                 <!--صورة رقم 3-->
+         <!--جنالنا كارد من الكومبوننت واختارينا الكارد الي هو صورة يكون وكلمة جواها فقط-->
+         <div class="card" style="width: 18rem; margin: 10px;">
+          <img src="images\foto16.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Dr.jasim</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <!--Thanks-->
+
+                               <hr class="my-4">
+
+
+  <!--////////////////////////////////////////// join us /////////////////////////////////////////////////-->
+  <!--///////////////////////////////////////// طريقة عمل الجوين اس //////////////////////////////////////-->
+     <h1 class="text-center text-light">Join us</h1> <!--كل الكلاسات هاي تمثل البوت ستراب-->
+  <div class="container-fluid"> <!--هنا سوينا حاوية للسكشن مال الجوين اس -->
+     <div class="row justify-content-center"> <!--هنا سوينا طريقة العرض لاكثر من ايتيم هلشكل التنسيقات تصير حتى يطلع الموقع حلو-->
+        <!--جنا كارد من الكومبوننت الي في موقع البوت ستراب والي هي من الفيرجن 4ز4 الي دنشتغل عليها-->
+         <!--////// رقم 1 ///////-->
+        <div class="card bg-dark" style="width: 18rem; margin: 10px; ">
+        <div class="card-body">
+          <h5 class="card-title text-light">subscribe now 
+            <img src="images\youtube.png" class="myicon" alt="" > <!--هنانا وضعنا صورة مال يوتيوب وانطينا الظهر للصورة على شكل ايقون وسوينا كلاس وسكيناه ماي ايقون حتى ننطيه مواصفات للصورة بالستايل شيت-->
+          </h5>
+         <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    هذني السطرين راح نحذفهن
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="https://www.youtube.com/user/HassounaAcademy" class="card-link" target="_blank" style="color: blanchedalmond;">لGo to link</a> <!--هنا نضع رابط الانضمام الى اليوتيوب-->
+        <!--  <a href="#" class="card-link">Another link</a>  هذا راح نحذفه لانه منريد اكثر من رابط-->
+        </div>
+      </div>
+
+       
+          <!--جنا كارد من الكومبوننت الي في موقع البوت ستراب والي هي من الفيرجن 4ز4 الي دنشتغل عليها-->
+          <!--////// رقم 2 ///////-->
+        <div class="card bg-dark" style="width: 18rem; margin: 10px; ">
+        <div class="card-body">
+          <h5 class="card-title text-light">subscribe now
+            <img src="images\facebook.png" class="myicon" alt=""> <!--هنانا وضعنا صورة مال فيس بوك وانطينا الظهر للصورة على شكل ايقون-->
+
+          </h5>
+         <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    هذني السطرين راح نحذفهن
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="https://t.me/hassouna_academy" class="card-link" target="_blank" style="color: blanchedalmond;">Go to link</a> <!--هنا نضع رابط الانضمام الى التلكرام -->
+        <!--  <a href="#" class="card-link">Another link</a>  هذا راح نحذفه لانه منريد اكثر من رابط-->
+        </div>
+      </div>
+
+
+        <!--جنا كارد من الكومبوننت الي في موقع البوت ستراب والي هي من الفيرجن 4ز4 الي دنشتغل عليها-->
+          <!--////// رقم 3 ///////-->
+          <div class="card bg-dark" style="width: 18rem; margin: 10px; ">
+            <div class="card-body">
+              <h5 class="card-title text-light" >subscribe now
+                <img src="images\facebook.png" class="myicon" alt=""> <!--هنانا وضعنا صورة مال فيس بوك وانطينا الظهر للصورة على شكل ايقون-->
+
+              </h5>
+             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    هذني السطرين راح نحذفهن
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="https://www.facebook.com/Hassouna.Academy/" class="card-link" target="_blank" style="color: blanchedalmond;">Go to link</a> <!-- التلكرهنا نضع رابط الانضمام الفيس بوك-->
+            <!--  <a href="#" class="card-link">Another link</a>  هذا راح نحذفه لانه منريد اكثر من رابط-->
+            </div>
+          </div>
+    
+
+           <!--جنا كارد من الكومبوننت الي في موقع البوت ستراب والي هي من الفيرجن 4ز4 الي دنشتغل عليها-->
+          <!--////// رقم 4 ///////-->
+          <div class="card bg-dark" style="width: 18rem; margin: 10px; ">
+            <div class="card-body">
+              <h5 class="card-title text-light" >subscribe now
+                <img src="images\facebook.png" class="myicon" alt=""> <!--هنانا وضعنا صورة مال فيس بوك وانطينا الظهر للصورة على شكل ايقون-->
+
+              </h5>
+             <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    هذني السطرين راح نحذفهن
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="https://www.facebook.com/groups/programmer.all/" class="card-link" target="_blank" style="color: blanchedalmond;">Go to link</a> <!-- التلكرهنا نضع رابط الانضمام الفيس بوك-->
+            <!--  <a href="#" class="card-link">Another link</a>  هذا راح نحذفه لانه منريد اكثر من رابط-->
+            </div>
+          </div>
+    
+
+
+     </div>
+  </div>
+
+
+  <!--//////////////////////////// الان راح نعمل الفوتر اسفل الموقع يعني  ////////////////////////////-->
+  <!--/////////////////////////// Footer ////////////////////////////////////////-->
+
+ <footer class="bg-dark"> <!--يعني لمن انطينا خلفية الفوتر لون دارك ظهر عدنا مستطيل لونه اسود خلف الكونتينر الفلويد-->
+       <div class="container-fluid">
+         <div class="row text-center"> <!--هنانا خلينا طريقة العرض للنص تكون بالسنتر وعلى الصف يعني بشكل سطر هاي الفائدة من كلاس الرو -->
+                                <!--العمود الاول-->
+           <div class="col-md-4">  <!--تم استخدام الكرد هنانا-->
+             <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+             <h5 style="color: white;"><img src="images\images.png" alt="" class="myicon">  Hassona Accademy </h5>    
+             <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+             <p style="color: white;">Tel:333-3333-333</p>
+             <p style="color: white;">Address: Cairo , Egypt </p>
+             <p style="color: white;">Fax:333-3333-332</p>
+
+           </div>
+
+                                 <!--العمود الثاني -->
+           <div class="col-md-4">  <!--تم استخدام الكرد هنانا-->
+            <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+            <h5 style="color: white;"><img src="images\images.png" alt="" class="myicon"> important links </h5>    
+            <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+            <p ><a href="" style="color: white;" target="_blank"> programming </a></p>
+            <p ><a href="" style="color: white;" target="_blank"> programming tecnologies</a></p>
+            <p ><a href="" style="color: white;" target="_blank"> programming in one video</a></p>
+
+          </div>
+
+                                <!--العمود الثالث-->
+            <div class="col-md-4">  <!--تم استخدام الكرد هنانا-->
+            <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+            <h5 style="color: white;"><img src="images\images.png" alt="" class="myicon">  vision </h5>    
+            <hr class="border-top my-3"> <!--هنانا خلينا خط للجمالية بحيث حصرنا لوكو الاكاديمية بين خطين للجمالية-->
+            <p style="color: white;">Education is first</p>
+            <p style="color: white;">Education for all</p>
+            <p style="color: white;">Education is easy</p>
+                      
+           </div>                       
+
+         </div>
+
+       </div>
+
+
+        <hr>
+          <div class="text-light text-center">Copyright& Hassona Accdemy all copy are reserved</div>   
+        <hr>
+ </footer>
+
+
+
+ <br>
+</div>  <!--هذه نهاية دف الكونتينر الي نوعها فلويد مال الموقع كله هذه-->
+
+
+<!--///////////////////////////// هنانا راح نضع ال modal الخاص باللوكن يعني جناه من الكومبوننت ومن ثم اختارينا مودل ////////////////////////-->
+
+<!-- Button trigger modal -->
+   <!--     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+          </button>                     طبعا هذا الزرار راح يتم حذفه بس راح ناخذ منه الداتا توكل والداتا تاركت ونضيفها بالناف بار باللوكن الي باعلى الموقع             
+     -->  
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5> <!--بدلنا المودل تايتل الى كلمة لوكن -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">   <!--داخل المودل خلينا الفورم الخاص بالايميل والباسورد يعني دخلنا شي بشي هلشكل -->
+
+                  <!--هنانا جبنا الفورم من الكومبوننت وخليناه داخل المودل بدل النقاط الي جانت موجودة هذه الفورم للايميل والباسورد-->
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                    <!--  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                       هذني راح نستبدلهن بالسوتش الي جبناه من الكومبوننت فورم اخذنا بس الكود مال التوكل سوتش  -->
+                          <!-- هذا كود التوكل سوتش جبناه من الكومبوننت من الفورم وخليناه بدل الانبوت جيك بوكس والليبل اللذان في الاعلى-->
+                       <div class="custom-control custom-switch">  
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">remember me</label> <!--غيرنا السطر الافتراضي الى ريممبر مي-->
+                      </div>
+                      
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button> <!--تم تغير التسمية من سب مت الى لوكن-->
+                  </form>
+            
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     <!--   <button type="button" class="btn btn-primary">Save changes</button>   حذفناه لان عدنا لوكن يعني استخدمنا المودل وبداخله الفورم الخاص بالايميل والباسورد فمراح نحتاج السيف جنج فلذلك حذفناه-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="jquery-3.4.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+
+<script>
+     $(function () {     // هذا الكود نضعه في حال اردنا ان نستخدم اكواد البوب اوفر هلشكل 
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+
+<!--//////////////////// راح نكتبالدالة الخاصة بالنسخ للكود الخاصة بكود البايثون وكود الرنغ ///////////////////////-->
+<script>
+  function mycopy(name){
+    var range = document.createRange();
+        range.selectNode(document.getElementById(name)); // تم اختيار كل النص ووضعه في المتغير رنج
+        window.getSelection().removeAllRanges(); //clear current selection هنا تم الغاء التضليل بعد ما اخذنا ووضعناه بالمتغير رنج
+        window.getSelection().addRange(range); //to select text حتى نختار النص من المدى الي ضضلناه
+        document.execCommand("copy"); //to copy the text by using command copy حتى نستنسخ النص باستخدام الايعاز نسخ
+        window.getSelection().removeAllRanges(); // to deselect لالغاء الاختيار 
+  }
+</script>
+
+
+
+<!--الجي كويري وظيفتها انه تلخص علينا شغل الجافاسكربت توفر علينا بالكود
+بينما البوت ستراب تنطينا جمالية وتسمح للصفحة بان تكون ريسبونسف يعني عندما نصغر الصفحة تتوالم مع 
+العرض فتقوم بتصغير نفسها الادوات هلشكل يعني -->
+
+</body>
+</html>

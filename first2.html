@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hassona Academy</title>
+          <!--ندخل عللى الملف البوت ستراب ومن ثم من ملف السي اس اس نختار البوت ستراب دوت من دوت سي اس اس ملف السي اس اس نخليه فوك-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css">
+</head>
+<body>
+ 
+    <h1>welcome</h1>   
+
+    <div class="btn btn-primary"></div>
+
+<!--//////////////////  راح نكدر ناخذ كودات جاهزة من الكومبوننت من البوت ستراب ///////////////////-->
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+<!--/////////////////////// الان نشرح ال popover //////////////////////////////-->
+<!--لازم ناخذ الكود التالي ونظمنه بالصفحة هنانا عندما نريد نعمل على البوب اوفر هلشكل -->
+<!--  
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+ لازم نضع الكود هذا في الاخير داخل تاك السكربت هلشكل  -->
+
+<!-- //////////////////// الكود اعلاه ضروري نضعه في حال اردنا استخدام البوب اوفر  ////////////////////////-->
+<div style="padding: 20px;">
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+</div>
+
+
+
+
+
+
+
+
+<!--الان بعد وضع الملفات راح يشتغل عدنا البوت ستراب اربعة يعني مختصر مفيد قمنا بتحميل فولدر البوت ستراب اربعة والذي يكون في داخله
+ملفان السي اس اس والجي اس نقوم بوضع ملف السي اس اس في الاعلى ضمن تاك اللينك ونقوم بوضع ملف البوت ستراب دوت من دوت جي اس بالاخير داخل البودي
+بعد ذلك نقوم بوضع ملفان الجي كويري وملف البوبر وفي هذا الحال اصبح لدينا البوت ستراب اربعة يشتغل -->
+<!-- ملف الجي كويري نخليه هنا وجواه مباشرة نخلي ملف البوبر -->
+<script src="jquery-3.4.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<!--هنانا نخلي ملف البوت ستراب حصرا ملف الميني ولازم يكون جوه -->
+<script src="bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+
+<script>
+     $(function () {     // هذا الكود نضعه في حال اردنا ان نستخدم اكواد البوب اوفر هلشكل 
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+
+<!--الجي كويري وظيفتها انه تلخص علينا شغل الجافاسكربت توفر علينا بالكود
+بينما البوت ستراب تنطينا جمالية وتسمح للصفحة بان تكون ريسبونسف يعني عندما نصغر الصفحة تتوالم مع 
+العرض فتقوم بتصغير نفسها الادوات هلشكل يعني -->
+</body>
+</html>
